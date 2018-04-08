@@ -1,9 +1,9 @@
 import requests
 
-url = "https://www.google.com/search?q=google+scholar+citations+Katherine+McMillan"
+url = "http://www.google.com"
 proxy_host = "proxy.crawlera.com"
 proxy_port = "8010"
-proxy_auth = "<175911a0b77a47148042c9e1b75bf3eb>:" # Make sure to include ':' at the end
+proxy_auth = "7726eab62c65435499c4d48190eb7824:" # Make sure to include ':' at the end
 proxies = {"https": "https://{}@{}:{}/".format(proxy_auth, proxy_host, proxy_port),
       "http": "http://{}@{}:{}/".format(proxy_auth, proxy_host, proxy_port)}
 
