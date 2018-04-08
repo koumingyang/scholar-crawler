@@ -1,9 +1,9 @@
 import requests
 
-url = "http://www.google.com"
+url = "http://httpbin.org/ip"
 proxy_host = "proxy.crawlera.com"
 proxy_port = "8010"
-proxy_auth = "7726eab62c65435499c4d48190eb7824:" # Make sure to include ':' at the end
+proxy_auth = "ae1e63bb02d94301898ddf121e5efb3e:" # Make sure to include ':' at the end
 proxies = {"https": "https://{}@{}:{}/".format(proxy_auth, proxy_host, proxy_port),
       "http": "http://{}@{}:{}/".format(proxy_auth, proxy_host, proxy_port)}
 
@@ -24,5 +24,3 @@ Response Headers:
 
 """.format(url, proxy_host, r.request.headers, r.elapsed.total_seconds(),
            r.status_code, r.headers, r.text))
-
-
